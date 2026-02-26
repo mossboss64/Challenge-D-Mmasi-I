@@ -1,0 +1,25 @@
+# jigsaw_falling_into_place
+use_synth :chipbass
+live_loop :guitarloop1 do
+  play :cs4
+  sleep 0.25
+  play :b4
+  sleep 0.25
+  play :d5
+  sleep 0.25
+  play :cs4
+  
+end
+live_loop :guitarloop1 do
+  play :cs4
+  sleep 0.25
+  play :b4
+  sleep 0.25
+  play :d5
+  sleep 0.25
+  play :cs4
+  sleep 0.25
+  play :b4
+  sleep 0.25
+  play :d5
+end
