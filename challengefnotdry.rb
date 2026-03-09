@@ -1,0 +1,20 @@
+# Welcome to Sonic Pi
+play :a0
+play :b0
+play :c1
+play :d1
+play :e1
+play :f1
+play :g1
+play :a1
+play :b1
+play :d2
+play :e2
+play :f2
+play :g2
+play :a2
+play :b2
+play :c3
+play :d3
+play :e3
+play :f3
