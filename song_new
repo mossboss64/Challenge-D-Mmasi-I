@@ -1,0 +1,50 @@
+my_sample = "C:/Users/faNet/Downloads/interstellar2.mp3"
+define :synth_track do
+  notes = [:A, :C, :F, :C]
+  i = 0
+  3.times do
+    4.times do
+      play notes[i], attack: 0.01
+      sleep 0.5
+      i = i + 1
+    end
+    i = 0
+  end
+  play :bb4, attack: 0.01
+  sleep 0.5
+  play :db, attack: 0.01
+  sleep 0.5
+  play :F, attack: 0.01
+  sleep 0.5
+  play :G, attack: 0.01
+  sleep 0.5
+end
+
+define :bass do
+  live_loop :bass_repeat do
+    2.times do
+      play :f2, release: 2, amp: 0.5
+      sleep 2
+      play :f2, release: 2, amp: 0.5
+      sleep 0.5
+      play :f2, release: 2, amp: 0.5
+      sleep 1.5
+      play :f2, release: 2, amp: 0.5
+      sleep 2
+      play :bb2, release: 1, amp: 0.5
+      sleep 0.75
+      play :bb2, release: 1, amp: 0.5
+      sleep 0.75
+      play :a2, release: 1, amp: 0.5
+      sleep 0.5
+    end
+  end
+end
+
+sample my_sample
+bass
+use_transpose +5
+use_synth :blade
+live_loop :main do
+  synth_track
+end
