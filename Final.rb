@@ -146,6 +146,7 @@ live_loop :mainsong2 do
   
   stop
 end
+sleep 4
 #transition
 sample :vinyl_scratch
 sleep 1.5
@@ -258,8 +259,4 @@ live_loop :bridge do
   end
   stop
 end
-
-
-
-
 
